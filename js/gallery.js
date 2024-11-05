@@ -95,7 +95,7 @@ function handelGallery(event) {
   if (event.target.nodeName !== "IMG") {
     return;
   }
-  //   console.log(event.target.dataset.source);
+
   basicLightbox
     .create(
       `
