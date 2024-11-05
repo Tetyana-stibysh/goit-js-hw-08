@@ -35,7 +35,7 @@ a {
   width: 376px;
   height: 208px;
 }
-/* .gallery-link:hover .gallery-item,
+.gallery-link:hover .gallery-item,
 .gallery-link:focus .gallery-item {
   width: calc((100% - 32px) / 3);
-} */
+}
