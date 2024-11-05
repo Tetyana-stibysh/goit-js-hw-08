@@ -1,0 +1,28 @@
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  color: currentColor;
+  text-decoration: none;
+  cursor: url(../bxs_hand-down.svg), pointer;
+}
+.gallery {
+  max-width: 1128px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 24px;
+}
+.gallery li {
+  width: calc((100% - 48px) / 3);
+}
