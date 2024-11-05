@@ -23,6 +23,19 @@ a {
   row-gap: 20px;
   column-gap: 24px;
 }
-.gallery li {
+.gallery-item {
   width: calc((100% - 48px) / 3);
 }
+.gallery-image {
+  width: 360px;
+  height: 200px;
+}
+.gallery-link:hover .gallery-image,
+.gallery-link:focus .gallery-image {
+  width: 376px;
+  height: 208px;
+}
+/* .gallery-link:hover .gallery-item,
+.gallery-link:focus .gallery-item {
+  width: calc((100% - 32px) / 3);
+} */
