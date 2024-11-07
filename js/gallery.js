@@ -65,12 +65,10 @@ const images = [
 ];
 const gallery = document.querySelector(".gallery");
 
-function createMarkup(object) {
-  let markImg = "";
-  for (const item of object) {
-    markImg = object
-      .map(
-        (item) => `
+function createMarkup(objects) {
+  return objects
+    .map(
+      (item) => `
         <li class="gallery-item">
   <a class="gallery-link" href=${item.original}>
     <img
@@ -82,13 +80,12 @@ function createMarkup(object) {
   </a>
 </li>
 `
-      )
-      .join("");
-  }
-  gallery.insertAdjacentHTML("afterbegin", markImg);
+    )
+    .join("");
 }
 
-createMarkup(images);
+gallery.insertAdjacentHTML("beforeend", createMarkup(images));
+
 gallery.addEventListener("click", handelGallery);
 function handelGallery(event) {
   event.preventDefault();
